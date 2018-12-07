@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/">Show All Tasks</a><br />
+Title :<span th:text="${course.taskname}" ></span><br />
+Instructor :<span th:text="${course.duedate}" ></span><br />
+Description :<p th:text="${course.priority}" ></p></span><br />
+<a href="@{/delete/{id}(id=${course.id})}">Delete this task</a><br />
+</body>
+</html>
